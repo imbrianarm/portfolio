@@ -1,0 +1,19 @@
+//BASE FONT AND BODY SETTINGS
+
+html {
+  font-size: 125%;
+}
+
+body {
+  font-family: $primaryFont;
+  color: $primaryColor;
+  background-color: $backgroundPrimary;
+}
+
+//WRAPPER SETTINGS
+
+.wrapper {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+}
