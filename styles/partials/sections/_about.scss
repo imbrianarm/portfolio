@@ -1,0 +1,85 @@
+.about {
+  background-color: $backgroundPrimary;
+
+  &Wrapper {
+    width: 80%;
+    margin: 0 auto;
+    height: 100vh;
+  }
+
+  &Heading {
+    display: flex;
+  }
+
+  &Image {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    // & img {
+    //   border-radius: 50%;
+    //   max-height: 40rem;
+    //   max-width: 40rem;
+    //   object-fit: cover;
+    // }
+
+    & img {
+      border-radius: 2rem;
+      max-height: 60vh;
+      width: 70%;
+      margin: 0 auto;
+      object-fit: cover;
+    }
+  }
+
+  &Text {
+    width: 60%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+
+    &Container {
+      padding: 0 5rem;
+    }
+  }
+
+  &Skills {
+    height: 30vh;
+    display: flex;
+
+    &Heading {
+      width: 15%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      & h2 {
+        color: black;
+        font-size: 3rem;
+        transform: rotate(270deg);
+        margin: 0;
+      }
+    }
+
+    &Icons {
+      width: 90%;
+
+      & ul {
+        color: black;
+        height: 30vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+      }
+
+      & img,
+      .fab {
+        width: 5rem;
+        font-size: 5rem;
+      }
+    }
+  }
+}

@@ -1,11 +1,12 @@
 //BASE FONT AND BODY SETTINGS
 
 html {
-  font-size: 125%;
+  font-size: 62.5%; //1 rem = 10px
 }
 
 body {
   font-family: $primaryFont;
+  font-size: 1.6rem;
   color: $primaryColor;
   background-color: $backgroundPrimary;
 }
@@ -16,4 +17,9 @@ body {
   max-width: 1600px;
   width: 100%;
   margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  display: inline-block;
 }

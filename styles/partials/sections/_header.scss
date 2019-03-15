@@ -1,4 +1,94 @@
 .header {
   background-color: $backgroundSecondary;
   height: 100vh;
+
+  &Wrapper {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  &Nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    height: 15vh;
+    
+    & li {
+      padding: 0 2rem;
+    }
+  }
+
+  &Main {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 5%;
+  }
+
+  &Text {
+    height: 75vh;
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    &Container {
+      padding-right: 6rem;
+      letter-spacing: 0.14rem;
+
+      & span {
+        color: $secondaryColor;
+      }
+    }
+  }
+
+  &Image {
+    height: 75vh;
+    width: 35%;
+    background-image: linear-gradient(
+        rgba(237, 241, 253, 0.5),
+        rgba(237, 241, 253, 0.5)
+      ),
+      url(../assets/brianImage.jpg);
+    // background-image: url(../assets/brianImageBlackAndWhite.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 2rem;
+  }
+
+  &Scroll {
+    width: 11%;
+    padding-bottom: 5rem;
+    position: relative;
+    
+    &Text {
+      transform: rotate(90deg);
+      position: absolute;
+      bottom: 5rem;
+      
+      & a {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  &Social {
+    height: 10vh;
+    
+    & ul {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      
+      & li {
+        padding: 0 1.5rem;
+        
+        & i {
+          font-size: 2.5rem;
+        }
+      }
+    }
+  }
 }

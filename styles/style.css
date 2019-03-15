@@ -147,18 +147,241 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   overflow: hidden; }
 
 html {
-  font-size: 125%; }
+  font-size: 62.5%; }
 
 body {
   font-family: "Montserrat", sans-serif;
-  color: #313C45;
-  background-color: #fafafa; }
+  font-size: 1.6rem;
+  color: #3e4356;
+  background-color: #fff; }
 
 .wrapper {
   max-width: 1600px;
   width: 100%;
   margin: 0 auto; }
 
+img {
+  width: 100%;
+  display: inline-block; }
+
+a:link,
+a:visited {
+  color: #717895;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+  letter-spacing: .16rem;
+  display: block; }
+
+a:hover,
+a:active {
+  color: #3e4356;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1); }
+
+.button {
+  text-transform: uppercase;
+  letter-spacing: normal;
+  background-color: #3e4356;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  padding: 1.5rem 3rem;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  letter-spacing: 0.14rem;
+  margin-top: 5rem; }
+  .button:hover {
+    background-color: #717895;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1); }
+
+h1 {
+  font-family: "Lato", sans-serif;
+  font-size: 6rem;
+  margin: 2rem 0; }
+
+h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 4rem;
+  margin: 2rem 0; }
+
 .header {
-  background-color: #dfe3e7;
+  background-color: #edf1fd;
   height: 100vh; }
+  .headerWrapper {
+    max-width: 90%;
+    margin: 0 auto; }
+  .headerNav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    list-style: none;
+    height: 15vh; }
+    .headerNav ul li {
+      padding: 0 2rem; }
+  .headerMain {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 5%; }
+  .headerText {
+    height: 75vh;
+    width: 55%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
+    .headerTextContainer {
+      padding-right: 6rem;
+      letter-spacing: 0.14rem; }
+      .headerTextContainer span {
+        color: #717895; }
+  .headerImage {
+    height: 75vh;
+    width: 35%;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(237, 241, 253, 0.5)), to(rgba(237, 241, 253, 0.5))), url(../assets/brianImage.jpg);
+    background-image: -webkit-linear-gradient(rgba(237, 241, 253, 0.5), rgba(237, 241, 253, 0.5)), url(../assets/brianImage.jpg);
+    background-image: -o-linear-gradient(rgba(237, 241, 253, 0.5), rgba(237, 241, 253, 0.5)), url(../assets/brianImage.jpg);
+    background-image: linear-gradient(rgba(237, 241, 253, 0.5), rgba(237, 241, 253, 0.5)), url(../assets/brianImage.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 2rem; }
+  .headerScroll {
+    width: 11%;
+    padding-bottom: 5rem;
+    position: relative; }
+    .headerScrollText {
+      -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      transform: rotate(90deg);
+      position: absolute;
+      bottom: 5rem; }
+      .headerScrollText a {
+        font-size: 1.2rem;
+        text-transform: uppercase; }
+  .headerSocial {
+    height: 10vh; }
+    .headerSocial ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      list-style: none; }
+      .headerSocial ul li {
+        padding: 0 1.5rem; }
+        .headerSocial ul li i {
+          font-size: 2.5rem; }
+
+.about {
+  background-color: #fff; }
+  .aboutWrapper {
+    width: 80%;
+    margin: 0 auto;
+    height: 100vh; }
+  .aboutHeading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .aboutImage {
+    width: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .aboutImage img {
+      border-radius: 2rem;
+      max-height: 60vh;
+      width: 70%;
+      margin: 0 auto;
+      -o-object-fit: cover;
+      object-fit: cover; }
+  .aboutText {
+    width: 60%;
+    height: 70vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .aboutTextContainer {
+      padding: 0 5rem; }
+  .aboutSkills {
+    height: 30vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .aboutSkillsHeading {
+      width: 15%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .aboutSkillsHeading h2 {
+        color: black;
+        font-size: 3rem;
+        -webkit-transform: rotate(270deg);
+        -ms-transform: rotate(270deg);
+        transform: rotate(270deg);
+        margin: 0; }
+    .aboutSkillsIcons {
+      width: 90%; }
+      .aboutSkillsIcons ul {
+        color: black;
+        height: 30vh;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        list-style: none;
+        padding: 0; }
+      .aboutSkillsIcons img,
+      .aboutSkillsIcons .fab {
+        width: 5rem;
+        font-size: 5rem; }
+
+.portfolio {
+  background-color: #edf1fd; }
+  .portfolioWrapper {
+    width: 80%;
+    margin: 0 auto;
+    height: 100vh; }
