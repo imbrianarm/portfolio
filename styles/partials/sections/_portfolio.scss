@@ -6,4 +6,37 @@
     margin: 0 auto;
     height: 100vh;
   }
+
+  &Text {
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &Container {
+      text-align: center;
+
+      & h2 {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &Tiles {
+    height: 85vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  }
+
+  &Card {
+
+    &Image {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    &Text {
+
+    }
+  }
 }

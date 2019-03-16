@@ -147,7 +147,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   overflow: hidden; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -262,10 +263,10 @@ h2 {
   .headerImage {
     height: 75vh;
     width: 35%;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(237, 241, 253, 0.5)), to(rgba(237, 241, 253, 0.5))), url(../assets/brianImage.jpg);
-    background-image: -webkit-linear-gradient(rgba(237, 241, 253, 0.5), rgba(237, 241, 253, 0.5)), url(../assets/brianImage.jpg);
-    background-image: -o-linear-gradient(rgba(237, 241, 253, 0.5), rgba(237, 241, 253, 0.5)), url(../assets/brianImage.jpg);
-    background-image: linear-gradient(rgba(237, 241, 253, 0.5), rgba(237, 241, 253, 0.5)), url(../assets/brianImage.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(237, 241, 253, 0.5)), to(rgba(237, 241, 253, 0.5))), url(../assets/brianBali.jpg);
+    background-image: -webkit-linear-gradient(rgba(237, 241, 253, 0.5), rgba(237, 241, 253, 0.5)), url(../assets/brianBali.jpg);
+    background-image: -o-linear-gradient(rgba(237, 241, 253, 0.5), rgba(237, 241, 253, 0.5)), url(../assets/brianBali.jpg);
+    background-image: linear-gradient(rgba(237, 241, 253, 0.5), rgba(237, 241, 253, 0.5)), url(../assets/brianBali.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 2rem; }
@@ -385,3 +386,49 @@ h2 {
     width: 80%;
     margin: 0 auto;
     height: 100vh; }
+  .portfolioText {
+    height: 15vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .portfolioTextContainer {
+      text-align: center; }
+      .portfolioTextContainer h2 {
+        margin-top: 0; }
+  .portfolioTiles {
+    height: 85vh;
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr)); }
+  .portfolioCardImage {
+    width: 80%;
+    margin: 0 auto; }
+
+.contact {
+  background-color: #fff; }
+  .contactWrapper {
+    width: 80%;
+    margin: 0 auto;
+    height: 45vh; }
+  .contactAlt {
+    background-color: #edf1fd; }
+
+.footer {
+  background-color: #fff;
+  height: 10vh;
+  font-size: 1.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .footer span {
+    color: #717895; }

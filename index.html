@@ -17,10 +17,9 @@
         <nav class="headerNav">
           <ul>
             <li><a href="#">home</a></li>
-            <li><a href="#">about</a></li>
-            <li><a href="#">portfolio</a></li>
-            <li><a href="#">resume</a></li>
-            <li><a href="#">contact</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#portfolio">portfolio</a></li>
+            <li><a href="#contact">contact</a></li>
           </ul>
         </nav>
         <div class="headerMain">
@@ -33,7 +32,7 @@
             </div>
           </div>
           <div class="headerImage">
-
+            
           </div>
           <div class="headerScroll">
             <div class="headerScrollText">
@@ -43,18 +42,18 @@
         </div>
         <div class="headerSocial">
           <ul>
-            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fab fa-github"></i></a></li>
-            <li><a href="#"><i class="fab fa-medium-m"></i></a></li>
-            <li><a href="#"><i class="far fa-envelope"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/brian-armitage-27593a5b/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="https://twitter.com/imbrianarm" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://github.com/imbrianarm" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://medium.com/@imbrianarm" target="_blank"><i class="fab fa-medium-m"></i></a></li>
+            <li><a href="mailto:brian@brianarm.dev"><i class="far fa-envelope"></i></a></li>
           </ul>
         </div>
       </div>
     </div>
   </header>
   <main>
-    <section class="about">
+    <section class="about" id="about">
       <div class="wrapper">
         <div class="aboutWrapper">
           <div class="aboutHeading">
@@ -81,21 +80,83 @@
                 <li><i class="fab fa-react"></i></li>
                 <li><i class="fab fa-sass"></i></li>
                 <li><i class="fab fa-github"></i></li>
-                <li><i><img src="assets/icons/firebase.png" alt="Firebase icon"></i></li>
-                <li><i><img src="assets/icons/vscode.png" alt="VS Code icon"></i></li>
-                <li><i><img src="assets/icons/responsive.png" alt="Responsive icon"></i></li>
-                <li><i><img src="assets/icons/iterm2.png" alt="iTerm2 icon"></i></li>
+                <li><i><img src="assets/icons/firebase.png" class="png" alt="Firebase icon"></i></li>
+                <!-- <li><i><img src="assets/icons/vscode.png" class="png" alt="VS Code icon"></i></li> -->
+                <li><i><img src="assets/icons/responsive.png" class="png" alt="Responsive icon"></i></li>
+                <!-- <li><i><img src="assets/icons/iterm2.png" class="png" alt="iTerm2 icon"></i></li> -->
               </ul>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
       <div class="portfolioWrapper">
+        <div class="portfolioText">
+          <div class="portfolioTextContainer">
+            <h2>Featured Works</h2>
+          </div>
+        </div>
+        <div class="portfolioTiles">
+          <div class="portfolioCard">
+            <div class="portfolioCardImage">
+              <a href="https://www.brianarm.dev/litTracker/" target="_blank"><img src="assets/litTracker.png" alt="Lit Tracker Screenshot"></a>
+            </div>
+            <div class="portfolioCardText">
 
+            </div>
+          </div>
+          <div class="portfolioCard">
+            <div class="portfolioCardImage">
+              <a href="https://www.brianarm.dev/foodApp/" target="_blank"><img src="assets/foodApp.jpg" alt="Lit Tracker Screenshot"></a>
+            </div>
+            <div class="portfolioCardText">
+          
+            </div>
+          </div>
+          <div class="portfolioCard">
+            <div class="portfolioCardImage">
+              <a href="https://www.brianarm.dev/queenStreetHotTreat/" target="_blank"><img src="assets/queenStreetHotTreat.jpg" alt="Lit Tracker Screenshot"></a>
+            </div>
+            <div class="portfolioCardText">
+          
+            </div>
+          </div>
+          <div class="portfolioCard">
+            <div class="portfolioCardImage">
+              <a href="https://www.brianarm.dev/barOne/" target="_blank"><img src="assets/barOne.jpg" alt="Lit Tracker Screenshot"></a>
+            </div>
+            <div class="portfolioCardText">
+          
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+    <section class="contact" id="contact">
+      <div class="wrapper">
+        <div class="contactWrapper">
+          <div class="contactCopy">
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contactAlt">
+      <div class="wrapper">
+        <div class="contactWrapper">
+          <div class="contactInfo">
+      
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="wrapper">
+        <p>Copyright <span>&copy;</span> 2019 www.brianarm.dev</p>
+        <p>created by Brian Armitage</p>
+      </div>
+    </footer>
   </main>
 </body>
 </html>

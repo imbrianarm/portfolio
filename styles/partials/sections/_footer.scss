@@ -1,0 +1,12 @@
+.footer {
+  background-color: $backgroundPrimary;
+  height: 10vh;
+  font-size: 1.4rem;
+  display: flex;
+  text-align: center;
+  align-items: center;
+
+  & span {
+    color: $secondaryColor;
+  }
+}

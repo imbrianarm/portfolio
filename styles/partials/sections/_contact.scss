@@ -1,0 +1,13 @@
+.contact {
+  background-color: $backgroundPrimary;
+  
+  &Wrapper {
+    width: 80%;
+    margin: 0 auto;
+    height: 45vh;
+  }
+  
+  &Alt {
+    background-color: $backgroundSecondary;
+  }
+}
