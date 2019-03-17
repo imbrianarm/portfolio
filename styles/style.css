@@ -508,6 +508,8 @@ h2 {
           padding-left: 0; }
         .contactInfoSocial ul li i {
           font-size: 2.5rem; }
+  .contactButton {
+    margin-top: 3rem; }
   .contactAlt {
     background-color: #edf1fd; }
 
