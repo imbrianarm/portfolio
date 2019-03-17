@@ -263,10 +263,10 @@ h2 {
   .headerImage {
     height: 75vh;
     width: 35%;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(237, 241, 253, 0.5)), to(rgba(237, 241, 253, 0.5))), url(../assets/brianBali.jpg);
-    background-image: -webkit-linear-gradient(rgba(237, 241, 253, 0.5), rgba(237, 241, 253, 0.5)), url(../assets/brianBali.jpg);
-    background-image: -o-linear-gradient(rgba(237, 241, 253, 0.5), rgba(237, 241, 253, 0.5)), url(../assets/brianBali.jpg);
-    background-image: linear-gradient(rgba(237, 241, 253, 0.5), rgba(237, 241, 253, 0.5)), url(../assets/brianBali.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(237, 241, 253, 0.4)), to(rgba(237, 241, 253, 0.4))), url(../assets/brianImage.jpg);
+    background-image: -webkit-linear-gradient(rgba(237, 241, 253, 0.4), rgba(237, 241, 253, 0.4)), url(../assets/brianImage.jpg);
+    background-image: -o-linear-gradient(rgba(237, 241, 253, 0.4), rgba(237, 241, 253, 0.4)), url(../assets/brianImage.jpg);
+    background-image: linear-gradient(rgba(237, 241, 253, 0.4), rgba(237, 241, 253, 0.4)), url(../assets/brianImage.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 2rem; }
@@ -322,8 +322,6 @@ h2 {
     .aboutImage img {
       border-radius: 2rem;
       max-height: 60vh;
-      width: 70%;
-      margin: 0 auto;
       -o-object-fit: cover;
       object-fit: cover; }
   .aboutText {
@@ -385,7 +383,7 @@ h2 {
   .portfolioWrapper {
     width: 80%;
     margin: 0 auto;
-    height: 100vh; }
+    min-height: 100vh; }
   .portfolioText {
     height: 15vh;
     display: -webkit-box;
@@ -402,7 +400,7 @@ h2 {
       .portfolioTextContainer h2 {
         margin-top: 0; }
   .portfolioTiles {
-    height: 85vh;
+    min-height: 85vh;
     display: -ms-grid;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr)); }
@@ -413,9 +411,67 @@ h2 {
 .contact {
   background-color: #fff; }
   .contactWrapper {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
-    height: 45vh; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .contactCopy {
+    height: 30vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .contactCopyContainer {
+      width: 50%;
+      font-size: 2rem; }
+      .contactCopyContainer p {
+        color: #717895; }
+      .contactCopyContainer span {
+        color: #3e4356; }
+  .contactInfo {
+    height: 60vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+    .contactInfo a {
+      font-size: 2rem;
+      padding: 1rem 0; }
+      .contactInfo a:hover, .contactInfo a:active {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1); }
+    .contactInfo i {
+      margin-right: 1.5rem; }
+    .contactInfoSocial ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      list-style: none;
+      padding: 0; }
+      .contactInfoSocial ul li {
+        padding: 0 1.5rem 2rem 1.5rem; }
+        .contactInfoSocial ul li:first-child {
+          padding-left: 0; }
+        .contactInfoSocial ul li i {
+          font-size: 2.5rem; }
   .contactAlt {
     background-color: #edf1fd; }
 

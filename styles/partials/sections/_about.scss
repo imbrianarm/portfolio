@@ -17,18 +17,12 @@
     justify-content: center;
     align-items: center;
 
-    // & img {
-    //   border-radius: 50%;
-    //   max-height: 40rem;
-    //   max-width: 40rem;
-    //   object-fit: cover;
-    // }
 
     & img {
       border-radius: 2rem;
       max-height: 60vh;
-      width: 70%;
-      margin: 0 auto;
+      // width: 70%;
+      // margin: 0 auto;
       object-fit: cover;
     }
   }

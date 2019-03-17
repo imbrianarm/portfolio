@@ -46,17 +46,11 @@
   &Image {
     height: 75vh;
     width: 35%;
-    // background-image: linear-gradient(
-    //     rgba(237, 241, 253, 0.5),
-    //     rgba(237, 241, 253, 0.5)
-    //   ),
-    //   url(../assets/brianImage.jpg);
     background-image: linear-gradient(
-      rgba(237, 241, 253, 0.5),
-      rgba(237, 241, 253, 0.5)
+      rgba(237, 241, 253, 0.4),
+      rgba(237, 241, 253, 0.4)
     ),
-    url(../assets/brianBali.jpg);
-    // background-image: url(../assets/brianImageBlackAndWhite.jpg);
+    url(../assets/brianImage.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 2rem;
