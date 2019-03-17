@@ -47,7 +47,6 @@
       align-items: center;
 
       & h2 {
-        color: black;
         font-size: 3rem;
         transform: rotate(270deg);
         margin: 0;
@@ -58,7 +57,6 @@
       width: 90%;
 
       & ul {
-        color: black;
         height: 30vh;
         display: flex;
         justify-content: space-around;
@@ -66,10 +64,66 @@
         list-style: none;
         padding: 0;
       }
-
-      & img {
-        width: 5rem;
-      }
     }
   }
+}
+
+.skillsIconContainer,
+.skillsIconContainer::before,
+.skillsIconImage,
+.skillsIconCaption {
+  transition: background-image 0.5s, transform 0.5s, opacity 0.5s;
+}
+
+.skillsIconContainer {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.skillsIconContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.skillsIconContainer:hover::before {
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.8)
+  );
+  transform: scale(1.5);
+}
+
+.skillsIconContainer:hover .skillsIconImage {
+  transform: scale(1.5) rotateY(360deg);
+}
+
+.skillsIconContainer:hover .skillsIconCaption {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+
+.skillsIconImage {
+  width: 5rem;
+  display: block;
+  backface-visibility: hidden;
+}
+
+.skillsIconCaption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 20%);
+  text-align: center;
+  opacity: 0;
+  color: $primaryColor;
+  font-weight: bold;
+  // letter-spacing: .16rem;
+  backface-visibility: hidden;
+  z-index: 10;
 }

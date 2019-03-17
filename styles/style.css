@@ -393,7 +393,6 @@ h2 {
       -ms-flex-align: center;
       align-items: center; }
       .aboutSkillsHeading h2 {
-        color: black;
         font-size: 3rem;
         -webkit-transform: rotate(270deg);
         -ms-transform: rotate(270deg);
@@ -402,7 +401,6 @@ h2 {
     .aboutSkillsIcons {
       width: 90%; }
       .aboutSkillsIcons ul {
-        color: black;
         height: 30vh;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -414,8 +412,70 @@ h2 {
         align-items: center;
         list-style: none;
         padding: 0; }
-      .aboutSkillsIcons img {
-        width: 5rem; }
+
+.skillsIconContainer,
+.skillsIconContainer::before,
+.skillsIconImage,
+.skillsIconCaption {
+  -webkit-transition: background-image 0.5s, opacity 0.5s, -webkit-transform 0.5s;
+  transition: background-image 0.5s, opacity 0.5s, -webkit-transform 0.5s;
+  -o-transition: background-image 0.5s, transform 0.5s, opacity 0.5s;
+  transition: background-image 0.5s, transform 0.5s, opacity 0.5s;
+  transition: background-image 0.5s, transform 0.5s, opacity 0.5s, -webkit-transform 0.5s; }
+
+.skillsIconContainer {
+  width: 100%;
+  margin: 0 auto;
+  position: relative; }
+
+.skillsIconContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1; }
+
+.skillsIconContainer:hover::before {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.8)));
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+  background-image: -o-linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5); }
+
+.skillsIconContainer:hover .skillsIconImage {
+  -webkit-transform: scale(1.5) rotateY(360deg);
+  transform: scale(1.5) rotateY(360deg); }
+
+.skillsIconContainer:hover .skillsIconCaption {
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+.skillsIconImage {
+  width: 5rem;
+  display: block;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.skillsIconCaption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 20%);
+  -ms-transform: translate(-50%, 20%);
+  transform: translate(-50%, 20%);
+  text-align: center;
+  opacity: 0;
+  color: #3e4356;
+  font-weight: bold;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  z-index: 10; }
 
 .portfolio {
   background-color: #edf1fd; }
