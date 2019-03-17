@@ -502,10 +502,27 @@ h2 {
     min-height: 85vh;
     display: -ms-grid;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr)); }
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    grid-row-gap: 2rem; }
   .portfolioCardImage {
-    width: 80%;
+    width: 90%;
     margin: 0 auto; }
+
+.foodAppText {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3; }
+
+.barOneText {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4 / 5; }
 
 .contact {
   background-color: #fff; }
