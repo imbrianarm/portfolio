@@ -1,6 +1,6 @@
 .contact {
   background-color: $backgroundPrimary;
-  
+
   &Wrapper {
     width: 70%;
     margin: 0 auto;
@@ -21,7 +21,7 @@
       & p {
         color: $secondaryColor;
       }
-  
+
       & span {
         color: $primaryColor;
       }
@@ -30,21 +30,14 @@
 
   &Info {
     height: 60vh;
-    // width: 50%;
     display: flex;
     flex-direction: column;
-    // align-items: center;
-    // text-align: center;
     justify-content: space-around;
 
     & a {
       font-size: 2rem;
       padding: 1rem 0;
-      
-      &:hover,
-      &:active { 
-        transform: scale(1);
-      }
+      text-transform: lowercase;
     }
 
     & i {
@@ -52,20 +45,19 @@
     }
 
     &Social {
-    
       & ul {
         display: flex;
         align-items: center;
         list-style: none;
         padding: 0;
-      
+
         & li {
           padding: 0 1.5rem 2rem 1.5rem;
 
           &:first-child {
             padding-left: 0;
           }
-        
+
           & i {
             font-size: 2.5rem;
           }
@@ -73,7 +65,7 @@
       }
     }
   }
-  
+
   &Alt {
     background-color: $backgroundSecondary;
   }

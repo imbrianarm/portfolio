@@ -13,7 +13,7 @@
     align-items: center;
     list-style: none;
     height: 15vh;
-    
+
     & li {
       padding: 0 2rem;
     }
@@ -47,10 +47,10 @@
     height: 75vh;
     width: 35%;
     background-image: linear-gradient(
-      rgba(237, 241, 253, 0.4),
-      rgba(237, 241, 253, 0.4)
-    ),
-    url(../assets/brianImage.jpg);
+        rgba(237, 241, 253, 0.4),
+        rgba(237, 241, 253, 0.4)
+      ),
+      url(../assets/brianImage.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 2rem;
@@ -60,12 +60,12 @@
     width: 11%;
     padding-bottom: 5rem;
     position: relative;
-    
+
     &Text {
       transform: rotate(90deg);
       position: absolute;
       bottom: 5rem;
-      
+
       & a {
         font-size: 1.2rem;
         text-transform: uppercase;
@@ -75,15 +75,15 @@
 
   &Social {
     height: 10vh;
-    
+
     & ul {
       display: flex;
       align-items: center;
       list-style: none;
-      
+
       & li {
         padding: 0 1.5rem;
-        
+
         & i {
           font-size: 2.5rem;
         }
