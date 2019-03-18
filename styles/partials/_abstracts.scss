@@ -8,3 +8,47 @@ $backgroundSecondary: #edf1fd;
 
 $primaryFont: "Montserrat", sans-serif;
 $secondaryFont: "Lato", sans-serif;
+
+// BREAKPOINT MIXINS
+
+@mixin breakpoint-phone-small {
+  @media (max-width: 400px) {
+    @content;
+  }
+}
+
+@mixin breakpoint-phone {
+  @media (max-width: 600px) {
+    @content;
+  }
+}
+
+@mixin breakpoint-phone-big {
+  @media (max-width: 700px) {
+    @content;
+  }
+}
+
+@mixin breakpoint-tablet-port {
+  @media (max-width: 900px) {
+    @content;
+  }
+}
+
+@mixin breakpoint-tablet-land {
+  @media (max-width: 1000px) {
+    @content;
+  }
+}
+
+@mixin breakpoint-desktop-smaller {
+  @media (max-width: 1300px) {
+    @content;
+  }
+}
+
+@mixin breakpoint-desktop-small {
+  @media (max-width: 1400px) {
+    @content;
+  }
+}

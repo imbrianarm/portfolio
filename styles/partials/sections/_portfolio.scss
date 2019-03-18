@@ -28,6 +28,11 @@
     grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
     grid-row-gap: 5rem;
     padding-bottom: 4rem;
+
+    @include breakpoint-tablet-land {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &Card {
@@ -40,6 +45,10 @@
       display: flex;
       align-items: center;
 
+      & img {
+        display: block;
+      }
+
       &:hover {
         // filter: grayscale(0%);
         filter: opacity(100%);
@@ -51,6 +60,13 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+
+      @include breakpoint-tablet-land {
+        width: 90%;
+        margin: 0 auto 5rem auto;
+        background-color: $backgroundPrimary;
+        padding: 2rem;
+      }
 
       & h2 {
         font-size: 2.5rem;
@@ -106,6 +122,10 @@
   align-items: flex-end;
   text-align: right;
 
+  @include breakpoint-tablet-land {
+    align-items: flex-start;
+  }
+
   & h2,
   p,
   a {
@@ -118,6 +138,10 @@
   grid-row: 4 / 5;
   align-items: flex-end;
   text-align: right;
+
+  @include breakpoint-tablet-land {
+    align-items: flex-start;
+  }
 
   & h2,
   p,

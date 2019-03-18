@@ -4,7 +4,7 @@
   &Wrapper {
     width: 80%;
     margin: 0 auto;
-    height: 100vh;
+    min-height: 100vh;
   }
 
   &Heading {
@@ -20,19 +20,23 @@
     & img {
       width: 70%;
       border-radius: 2rem;
-      max-height: 60vh;
+      height: 60vh;
       object-fit: cover;
     }
   }
 
   &Text {
     width: 60%;
-    height: 70vh;
+    min-height: 70vh;
     display: flex;
     align-items: center;
 
     &Container {
       padding: 0 5rem;
+
+      @include breakpoint-desktop-smaller {
+        padding: 0;
+      }
 
       & p {
         margin-bottom: 1rem;
@@ -46,7 +50,7 @@
   }
 
   &Skills {
-    height: 30vh;
+    min-height: 30vh;
     display: flex;
 
     &Heading {
@@ -66,7 +70,7 @@
       width: 90%;
 
       & ul {
-        height: 30vh;
+        min-height: 30vh;
         display: flex;
         justify-content: space-around;
         align-items: center;

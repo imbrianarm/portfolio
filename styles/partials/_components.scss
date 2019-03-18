@@ -30,6 +30,10 @@ a:active {
   letter-spacing: 0.14rem;
   margin-top: 5rem;
 
+  @include breakpoint-tablet-port {
+    margin-top: 2.5rem;
+  }
+
   &:hover {
     background-color: $secondaryColor;
     transform: scale(1.1);
@@ -57,10 +61,18 @@ h1 {
   font-family: $secondaryFont;
   font-size: 6rem;
   margin: 2rem 0;
+
+  @include breakpoint-tablet-port {
+    font-size: 4rem;
+  }
 }
 
 h2 {
   font-family: $secondaryFont;
   font-size: 4rem;
   margin: 2rem 0;
+
+  @include breakpoint-tablet-port {
+    font-size: 3rem;
+  }
 }

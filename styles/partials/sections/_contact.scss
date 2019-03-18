@@ -18,6 +18,10 @@
       width: 50%;
       font-size: 2rem;
 
+      @include breakpoint-tablet-port {
+        font-size: 1.6rem;
+      }
+
       & p {
         color: $secondaryColor;
       }
@@ -38,6 +42,10 @@
       font-size: 2rem;
       padding: 1rem 0;
       text-transform: lowercase;
+
+      @include breakpoint-tablet-port {
+        font-size: 1.6rem;
+      }
     }
 
     & i {
