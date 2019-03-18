@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Brian Armitage - Portfolio</title>
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
@@ -38,7 +39,13 @@
                   This is <span>Brian Armitage</span> - Web Developer, located
                   in Toronto.
                 </p>
-                <button class="downloadCVButton button">Download CV</button>
+                <form method="get" action="litTracker.pdf">
+                  <button class="downloadCVButton button">
+                    <i class="fas fa-download"></i> Download CV
+                  </button>
+                </form>
+
+                <!-- <button class="downloadCVButton button">Download CV</button> -->
               </div>
             </div>
             <div class="headerImage"></div>
@@ -228,9 +235,7 @@
             <div class="portfolioTiles">
               <div class="portfolioCardImage litTrackerImage">
                 <a href="https://www.brianarm.dev/litTracker/" target="_blank"
-                  ><img
-                    src="assets/litTracker.png"
-                    alt="Lit Tracker Screenshot"
+                  ><img src="assets/litTracker.png" alt="Lit Tracker Screenshot"
                 /></a>
               </div>
               <div class="portfolioCardText litTrackerText">
@@ -294,9 +299,11 @@
                 <a href="tel:4166719631"
                   ><i class="fas fa-phone"></i>416-671-9631</a
                 >
-                <button class="downloadCVButton contactButton button">
-                  Download CV
-                </button>
+                <form method="get" action="litTracker.pdf">
+                  <button class="downloadCVButton button">
+                    <i class="fas fa-download"></i> Download CV
+                  </button>
+                </form>
               </div>
               <div class="contactInfoSocial">
                 <ul>
