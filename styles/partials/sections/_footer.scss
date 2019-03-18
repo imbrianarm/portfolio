@@ -9,4 +9,14 @@
   & span {
     color: $secondaryColor;
   }
+
+  & a {
+    display: inline-block;
+    text-transform: capitalize;
+    letter-spacing: normal;
+
+    &:hover {
+      transform: scale(1);
+    }
+  }
 }

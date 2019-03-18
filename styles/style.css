@@ -503,18 +503,76 @@ h2 {
     display: -ms-grid;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
-    grid-row-gap: 2rem; }
+    grid-row-gap: 4rem; }
   .portfolioCardImage {
     width: 90%;
     margin: 0 auto;
-    -webkit-filter: grayscale(75%);
-    filter: grayscale(75%);
+    -webkit-filter: opacity(50%);
+    filter: opacity(50%);
     -webkit-transition: all 0.2s;
     -o-transition: all 0.2s;
-    transition: all 0.2s; }
+    transition: all 0.2s;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
     .portfolioCardImage:hover {
-      -webkit-filter: grayscale(0%);
-      filter: grayscale(0%); }
+      -webkit-filter: opacity(100%);
+      filter: opacity(100%); }
+  .portfolioCardText {
+    padding: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .portfolioCardText h2 {
+      font-size: 2.5rem;
+      margin: 0 0 1rem 0; }
+    .portfolioCardTextIconContainer {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-bottom: 1rem; }
+      .portfolioCardTextIconContainer figure {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-right: 2rem; }
+      .portfolioCardTextIconContainer figcaption {
+        margin-top: 0.5rem;
+        font-size: 1.2rem;
+        color: #717895; }
+    .portfolioCardTextIcons {
+      width: 4rem; }
+      .portfolioCardTextIcons:first-child {
+        margin-left: 0; }
+    .portfolioCardText .button {
+      color: #fff;
+      font-size: 1.2rem;
+      padding: 0.75rem 1.5rem;
+      display: inline-block;
+      margin-top: 1rem;
+      margin-right: 1.5rem;
+      text-transform: capitalize; }
+  .portfolioButtons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
 
 .foodAppText {
   -ms-grid-column: 1;
@@ -611,3 +669,11 @@ h2 {
   align-items: center; }
   .footer span {
     color: #717895; }
+  .footer a {
+    display: inline-block;
+    text-transform: capitalize;
+    letter-spacing: normal; }
+    .footer a:hover {
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1); }
