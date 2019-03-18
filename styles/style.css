@@ -506,7 +506,15 @@ h2 {
     grid-row-gap: 2rem; }
   .portfolioCardImage {
     width: 90%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    -webkit-filter: grayscale(75%);
+    filter: grayscale(75%);
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s; }
+    .portfolioCardImage:hover {
+      -webkit-filter: grayscale(0%);
+      filter: grayscale(0%); }
 
 .foodAppText {
   -ms-grid-column: 1;

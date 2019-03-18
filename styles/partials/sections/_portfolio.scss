@@ -33,6 +33,13 @@
     &Image {
       width: 90%;
       margin: 0 auto;
+      filter: grayscale(75%);
+      // filter: opacity(60%);
+      transition: all 0.2s;
+
+      &:hover {
+        filter: grayscale(0%);
+      }
     }
 
     &Text {
