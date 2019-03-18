@@ -6,7 +6,6 @@ $(document).ready(() => {
 });
 
 app.init = () => {
-  // app.portfolioCover("#litTrackerText", "#litTrackerImage");
 };
 
 // Smooth scroll on anchor click
@@ -34,17 +33,3 @@ $(".aboutButton").on("click", function(e) {
     "linear"
   );
 });
-
-// app.portfolioCover = (a, b) => {
-//   $(a, b).hover(
-//     function() {
-//       $(b).css("filter", "grayscale(0%)");
-//       $(b).css("transform", "scale(1.1)");
-//     },
-//     function() {
-//       // on mouseout, reset the background colour
-//       $(b).css("filter", "grayscale(100%)");
-//       $(b).css("transform", "scale(1)");
-//     }
-//   );
-// };

@@ -17,7 +17,7 @@
       text-align: center;
 
       & h2 {
-        margin-top: 0;
+        margin: 0;
       }
     }
   }
@@ -26,7 +26,8 @@
     min-height: 85vh;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
-    grid-row-gap: 4rem;
+    grid-row-gap: 5rem;
+    padding-bottom: 4rem;
   }
 
   &Card {
@@ -58,7 +59,6 @@
 
       &IconContainer {
         display: flex;
-        // justify-content: space-around;
         margin-bottom: 1rem;
 
         & figure {
@@ -103,9 +103,25 @@
 .foodAppText {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
+  align-items: flex-end;
+  text-align: right;
+
+  & h2,
+  p,
+  a {
+    margin-right: 2rem;
+  }
 }
 
 .barOneText {
   grid-column: 1 / 2;
   grid-row: 4 / 5;
+  align-items: flex-end;
+  text-align: right;
+
+  & h2,
+  p,
+  a {
+    margin-right: 2rem;
+  }
 }

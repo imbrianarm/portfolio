@@ -33,6 +33,15 @@
 
     &Container {
       padding: 0 5rem;
+
+      & p {
+        margin-bottom: 1rem;
+      }
+
+      & span {
+        color: $secondaryColor;
+        font-weight: bold;
+      }
     }
   }
 
