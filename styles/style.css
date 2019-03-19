@@ -195,6 +195,9 @@ img {
   width: 100%;
   display: inline-block; }
 
+ul {
+  padding-left: 0; }
+
 a:link,
 a:visited {
   color: #717895;
@@ -210,6 +213,10 @@ a:visited {
     a:link,
     a:visited {
       font-size: 1.4rem; } }
+  @media (max-width: 400px) {
+    a:link,
+    a:visited {
+      font-size: 1.3rem; } }
 
 a:hover,
 a:active {
@@ -239,11 +246,11 @@ a:active {
       margin-top: 2.5rem; } }
   @media (max-width: 600px) {
     .button {
-      padding: .75rem 1.5rem;
+      padding: 0.75rem 1.5rem;
       font-size: 1.2rem; } }
   @media (max-width: 400px) {
     .button {
-      padding: .5rem .75rem; } }
+      padding: 0.5rem 0.75rem; } }
   .button:hover {
     background-color: #717895;
     -webkit-transform: scale(1.1);
@@ -305,6 +312,12 @@ h2 {
     height: 15vh; }
     .headerNav ul li {
       padding: 0 2rem; }
+      @media (max-width: 600px) {
+        .headerNav ul li {
+          padding: 0 1rem; } }
+      @media (max-width: 600px) {
+        .headerNav ul li {
+          padding: 0 0.5rem; } }
   .headerMain {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -388,8 +401,7 @@ h2 {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
-      list-style: none;
-      padding-left: 0; }
+      list-style: none; }
       .headerSocial ul li {
         padding: 0 1.5rem; }
         .headerSocial ul li i {
@@ -714,6 +726,9 @@ h2 {
       margin-top: 1rem;
       margin-right: 1.5rem;
       text-transform: capitalize; }
+      @media (max-width: 400px) {
+        .portfolioCardText .button {
+          padding: 0.5rem 0.75rem; } }
   .portfolioButtons {
     display: -webkit-box;
     display: -ms-flexbox;
