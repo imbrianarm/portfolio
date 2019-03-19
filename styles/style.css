@@ -198,6 +198,9 @@ img {
 ul {
   padding-left: 0; }
 
+p {
+  line-height: 1.35; }
+
 a:link,
 a:visited {
   color: #717895;
@@ -662,6 +665,10 @@ h2 {
     .portfolioCardImage:hover {
       -webkit-filter: opacity(100%);
       filter: opacity(100%); }
+    .portfolioCardImage a:hover {
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1); }
   .portfolioCardText {
     padding: 1rem;
     display: -webkit-box;
