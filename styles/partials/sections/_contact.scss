@@ -9,7 +9,7 @@
   }
 
   &Copy {
-    height: 30vh;
+    min-height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,7 +35,7 @@
   }
 
   &Info {
-    height: 60vh;
+    min-height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
