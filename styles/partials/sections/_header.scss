@@ -1,6 +1,6 @@
 .header {
   background-color: $backgroundSecondary;
-  height: 100vh;
+  min-height: 100vh;
 
   &Wrapper {
     max-width: 90%;
@@ -24,18 +24,40 @@
     width: 100%;
     margin: 0 auto;
     padding-left: 5%;
+
+    @include breakpoint-phone {
+      // flex-direction: column;
+      padding-left: 0;
+    }
   }
 
   &Text {
-    height: 75vh;
+    min-height: 75vh;
     width: 55%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
 
+    @include breakpoint-tablet-port {
+      width: 50%;
+    }
+
+    @include breakpoint-phone-small {
+      width: 60%;
+    }
+
+    // @include breakpoint-phone {
+    //   width: 100%;
+    //   justify-content: center;
+    // }
+
     &Container {
       padding-right: 6rem;
       letter-spacing: 0.14rem;
+
+      @include breakpoint-tablet-port {
+        padding-right: 2rem;
+      }
 
       & span {
         color: $secondaryColor;
@@ -44,7 +66,7 @@
   }
 
   &Image {
-    height: 75vh;
+    min-height: 75vh;
     width: 35%;
     // background-image: linear-gradient(
     //     rgba(237, 241, 253, 0.4),
@@ -55,19 +77,39 @@
     background-size: cover;
     background-position: center;
     border-radius: 2rem;
+
+    @include breakpoint-tablet-port {
+      width: 50%;
+    }
+
+    @include breakpoint-phone-small {
+      width: 40%;
+    }
+
+    // @include breakpoint-phone {
+    //   order: -1;
+    //   // height: 100%;
+    // }
   }
 
   &Scroll {
-    width: 11%;
-    padding-bottom: 5rem;
+    width: 10%;
+    // padding-bottom: 5rem;
     position: relative;
+    display: flex;
+    white-space: nowrap;
 
+    @include breakpoint-phone {
+      display: none;
+    }
+    
     &Text {
-      transform: rotate(90deg);
       position: absolute;
       bottom: 5rem;
-
+      right: -5rem;
+      
       & a {
+        transform: rotate(90deg);
         font-size: 1.2rem;
         text-transform: uppercase;
       }
@@ -75,18 +117,27 @@
   }
 
   &Social {
-    height: 10vh;
+    min-height: 10vh;
+
+    @include breakpoint-phone {
+      display: flex;
+    }
 
     & ul {
       display: flex;
       align-items: center;
       list-style: none;
+      padding-left: 0;
 
       & li {
         padding: 0 1.5rem;
 
         & i {
           font-size: 2.5rem;
+
+          @include breakpoint-phone {
+            font-size: 2rem;
+          }
         }
       }
     }

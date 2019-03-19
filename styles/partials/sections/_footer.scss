@@ -1,10 +1,14 @@
 .footer {
   background-color: $backgroundPrimary;
-  height: 10vh;
+  min-height: 10vh;
   font-size: 1.4rem;
   display: flex;
   text-align: center;
   align-items: center;
+
+  @include breakpoint-phone {
+    padding: 1rem 0;
+  }
 
   & span {
     color: $secondaryColor;

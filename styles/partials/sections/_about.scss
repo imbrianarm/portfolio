@@ -5,10 +5,18 @@
     width: 80%;
     margin: 0 auto;
     min-height: 100vh;
+
+    @include breakpoint-phone {
+      width: 90%
+    }
   }
 
   &Heading {
     display: flex;
+
+    @include breakpoint-phone {
+      flex-direction: column-reverse;
+    }
   }
 
   &Image {
@@ -17,11 +25,30 @@
     justify-content: center;
     align-items: center;
 
+    @include breakpoint-tablet-port {
+      justify-content: flex-start;
+    }
+
+    @include breakpoint-phone {
+      width: 70%;
+      align-self: center;
+      margin-top: 2rem;
+    }
+
     & img {
       width: 70%;
       border-radius: 2rem;
       height: 60vh;
       object-fit: cover;
+
+      @include breakpoint-tablet-port {
+        width: 90%;
+      }
+
+      @include breakpoint-phone {
+        width: 100%;
+        object-fit: cover;
+      }
     }
   }
 
@@ -30,6 +57,11 @@
     min-height: 70vh;
     display: flex;
     align-items: center;
+
+    @include breakpoint-phone {
+      width: 90%;
+      margin: 0 auto;
+    }
 
     &Container {
       padding: 0 5rem;
@@ -56,19 +88,31 @@
     &Heading {
       width: 15%;
       display: flex;
-      justify-content: flex-end;
+      justify-content: center;
       align-items: center;
+      white-space: nowrap;
+
+
 
       & h2 {
         font-size: 3rem;
         transform: rotate(270deg);
         margin: 0;
+
+        @include breakpoint-tablet-port {
+          margin: 2rem 0;
+        }
       }
     }
 
     &Icons {
       width: 90%;
 
+      @include breakpoint-tablet-port {
+        margin: 3rem 0;
+      }
+
+      
       & ul {
         min-height: 30vh;
         display: flex;
@@ -76,6 +120,13 @@
         align-items: center;
         list-style: none;
         padding: 0;
+        
+        @include breakpoint-tablet-port {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          grid-template-rows: repeat(2, 1fr);
+          justify-items: center;
+        }
       }
     }
   }

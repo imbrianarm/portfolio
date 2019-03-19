@@ -77,6 +77,14 @@
         display: flex;
         margin-bottom: 1rem;
 
+        @include breakpoint-phone-small {
+          display: grid; 
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(2, 1fr);
+          grid-row-gap: 2rem;
+          justify-items: center;
+        }
+
         & figure {
           display: flex;
           flex-direction: column;
@@ -124,6 +132,11 @@
 
   @include breakpoint-tablet-land {
     align-items: flex-start;
+    text-align: left;
+  }
+
+  @include breakpoint-phone-small {
+    align-items: inherit;
   }
 
   & h2,
@@ -141,6 +154,11 @@
 
   @include breakpoint-tablet-land {
     align-items: flex-start;
+    text-align: left;
+  }
+
+  @include breakpoint-phone-small {
+    align-items: inherit;
   }
 
   & h2,
