@@ -1,3 +1,4 @@
+@import url(partials/animate.css);
 article,
 aside,
 details,
@@ -296,6 +297,9 @@ h2 {
   .headerWrapper {
     max-width: 90%;
     margin: 0 auto; }
+    @media (max-width: 600px) {
+      .headerWrapper {
+        max-width: 80%; } }
   @media (max-width: 600px) {
     .headerNav {
       position: fixed;
@@ -440,8 +444,8 @@ h2 {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   cursor: pointer;
-  background: #edf1fd;
-  border: 1px solid #3e4356;
+  background: rgba(255, 255, 255, 0);
+  border: none;
   outline: none;
   display: none;
   opacity: 0.7;

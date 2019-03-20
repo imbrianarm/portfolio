@@ -9,6 +9,10 @@
   &Wrapper {
     max-width: 90%;
     margin: 0 auto;
+
+    @include breakpoint-phone {
+      max-width: 80%;
+    }
   }
 
   &Nav {
@@ -168,8 +172,8 @@
   height: 5rem;
   box-sizing: border-box;
   cursor: pointer;
-  background: $backgroundSecondary;
-  border: 1px solid $primaryColor;
+  background: rgba(255 ,255, 255 , 0);
+  border: none;
   outline: none;
   display: none;
   opacity: 0.7;
