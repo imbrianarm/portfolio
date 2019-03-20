@@ -286,16 +286,28 @@ h2 {
   @media (max-width: 900px) {
     h2 {
       font-size: 3rem; } }
-  @media (max-width: 600px) {
-    h2 {
-      font-size: 2rem; } }
 
 .header {
   background-color: #edf1fd;
   min-height: 100vh; }
+  @media (max-width: 600px) {
+    .header {
+      min-height: 75vh; } }
   .headerWrapper {
     max-width: 90%;
     margin: 0 auto; }
+  @media (max-width: 600px) {
+    .headerNav {
+      position: fixed;
+      top: 0;
+      left: -25rem;
+      background: rgba(62, 67, 86, 0.9);
+      height: 100%;
+      width: 25rem;
+      -webkit-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      transition: all 0.2s;
+      z-index: 999; } }
   .headerNav ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -308,14 +320,26 @@ h2 {
     align-items: center;
     list-style: none;
     min-height: 15vh; }
-    .headerNav ul li {
-      padding: 0 2rem; }
+    @media (max-width: 600px) {
+      .headerNav ul {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        height: 100vh; } }
+    .headerNav ul li a {
+      padding: 0rem 2rem;
+      -webkit-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      transition: all 0.2s; }
       @media (max-width: 600px) {
-        .headerNav ul li {
-          padding: 0 1rem; } }
+        .headerNav ul li a {
+          padding: 4rem 2rem;
+          color: #fff;
+          font-size: 1.6rem; } }
       @media (max-width: 600px) {
-        .headerNav ul li {
-          padding: 0 0.5rem; } }
+        .headerNav ul li a:hover {
+          color: #717895; } }
   .headerMain {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -406,6 +430,71 @@ h2 {
           @media (max-width: 600px) {
             .headerSocial ul li i {
               font-size: 2rem; } }
+
+.sidebarBtn {
+  position: absolute;
+  top: 0;
+  right: -5rem;
+  width: 5rem;
+  height: 5rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+  background: #edf1fd;
+  border: 1px solid #3e4356;
+  outline: none;
+  display: none;
+  opacity: 0.7; }
+  @media (max-width: 600px) {
+    .sidebarBtn {
+      display: inline-block; } }
+  .sidebarBtn.toggle span {
+    background: transparent; }
+    .sidebarBtn.toggle span:before {
+      top: 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg); }
+    .sidebarBtn.toggle span:after {
+      top: 0;
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg); }
+  .sidebarBtn span {
+    display: block;
+    width: 3.5rem;
+    height: 0.3rem;
+    background: #3e4356;
+    position: absolute;
+    top: 2.4rem;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s; }
+    .sidebarBtn span:before {
+      content: "";
+      position: absolute;
+      top: -1rem;
+      left: 0;
+      width: 100%;
+      height: 0.3rem;
+      background: #3e4356;
+      -webkit-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      transition: all 0.2s; }
+    .sidebarBtn span:after {
+      content: "";
+      position: absolute;
+      top: 1rem;
+      left: 0;
+      width: 100%;
+      height: 0.3rem;
+      background: #3e4356;
+      -webkit-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      transition: all 0.2s; }
+
+.active {
+  left: 0; }
 
 .about {
   background-color: #fff; }
@@ -644,6 +733,9 @@ h2 {
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column; } }
+    @media (max-width: 600px) {
+      .portfolioTiles {
+        padding-bottom: 0; } }
   .portfolioCardImage {
     width: 90%;
     margin: 0 auto;

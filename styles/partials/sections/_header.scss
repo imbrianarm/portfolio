@@ -2,9 +2,26 @@
   background-color: $backgroundSecondary;
   min-height: 100vh;
 
+  @include breakpoint-phone {
+    min-height: 75vh;
+  }
+
   &Wrapper {
     max-width: 90%;
     margin: 0 auto;
+  }
+
+  &Nav {
+    @include breakpoint-phone {
+      position: fixed;
+      top: 0;
+      left: -25rem;
+      background: rgba(62, 67, 86, 0.9);
+      height: 100%;
+      width: 25rem;
+      transition: all 0.2s;
+      z-index: 999;
+    }
   }
 
   &Nav ul {
@@ -14,15 +31,25 @@
     list-style: none;
     min-height: 15vh;
 
-    & li {
-      padding: 0 2rem;
+    @include breakpoint-phone {
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    & li a {
+      padding: 0rem 2rem;
+      transition: all 0.2s;
 
       @include breakpoint-phone {
-        padding: 0 1rem;
+        padding: 4rem 2rem;
+        color: $backgroundPrimary;
+        font-size: 1.6rem;
       }
 
-      @include breakpoint-phone {
-        padding: 0 0.5rem;
+      &:hover {
+        @include breakpoint-phone {
+          color: $secondaryColor;
+        }
       }
     }
   }
@@ -34,7 +61,6 @@
     padding-left: 5%;
 
     @include breakpoint-phone {
-      // flex-direction: column;
       padding-left: 0;
     }
   }
@@ -54,11 +80,6 @@
       width: 60%;
     }
 
-    // @include breakpoint-phone {
-    //   width: 100%;
-    //   justify-content: center;
-    // }
-
     &Container {
       padding-right: 6rem;
       letter-spacing: 0.14rem;
@@ -76,15 +97,9 @@
   &Image {
     min-height: 75vh;
     width: 35%;
-    // background-image: linear-gradient(
-    //     rgba(237, 241, 253, 0.4),
-    //     rgba(237, 241, 253, 0.4)
-    //   ),
-    //   url(../assets/brianImage.jpg);
     background-image: url(../assets/brianImage.png);
     background-size: cover;
     background-position: center;
-    // border-radius: 2rem;
 
     @include breakpoint-tablet-port {
       width: 50%;
@@ -93,16 +108,10 @@
     @include breakpoint-phone-small {
       width: 40%;
     }
-
-    // @include breakpoint-phone {
-    //   order: -1;
-    //   // height: 100%;
-    // }
   }
 
   &Scroll {
     width: 10%;
-    // padding-bottom: 5rem;
     position: relative;
     display: flex;
     white-space: nowrap;
@@ -149,4 +158,73 @@
       }
     }
   }
+}
+
+.sidebarBtn {
+  position: absolute;
+  top: 0;
+  right: -5rem;
+  width: 5rem;
+  height: 5rem;
+  box-sizing: border-box;
+  cursor: pointer;
+  background: $backgroundSecondary;
+  border: 1px solid $primaryColor;
+  outline: none;
+  display: none;
+  opacity: 0.7;
+
+  @include breakpoint-phone {
+    display: inline-block;
+  }
+
+  &.toggle span {
+    background: transparent;
+
+    &:before {
+      top: 0;
+      transform: rotate(45deg);
+    }
+
+    &:after {
+      top: 0;
+      transform: rotate(-45deg);
+    }
+  }
+
+  & span {
+    display: block;
+    width: 3.5rem;
+    height: 0.3rem;
+    background: $primaryColor;
+    position: absolute;
+    top: 2.4rem;
+    transition: all 0.2s;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: -1rem;
+      left: 0;
+      width: 100%;
+      height: 0.3rem;
+      background: $primaryColor;
+      transition: all 0.2s;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 1rem;
+      left: 0;
+      width: 100%;
+      height: 0.3rem;
+      background: $primaryColor;
+      transition: all 0.2s;
+    }
+  }
+}
+
+.active {
+  left: 0;
 }
