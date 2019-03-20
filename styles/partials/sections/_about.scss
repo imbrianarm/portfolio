@@ -13,6 +13,7 @@
 
   &Heading {
     display: flex;
+    padding-top: 2rem;
 
     @include breakpoint-phone {
       flex-direction: column-reverse;
@@ -35,19 +36,24 @@
       margin-top: 2rem;
     }
 
+    
     & img {
       width: 70%;
       border-radius: 2rem;
       height: 60vh;
       object-fit: cover;
-
+      
       @include breakpoint-tablet-port {
         width: 90%;
       }
-
+      
       @include breakpoint-phone {
         width: 100%;
-        object-fit: cover;
+      }
+      
+      @include breakpoint-phone-small {
+        object-fit: contain;
+        // border-radius: 50%;
       }
     }
   }
@@ -60,7 +66,8 @@
 
     @include breakpoint-phone {
       width: 90%;
-      margin: 0 auto;
+      margin: 0 auto 2rem auto;
+      text-align: center;
     }
 
     &Container {

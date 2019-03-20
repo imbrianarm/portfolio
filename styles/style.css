@@ -175,13 +175,15 @@ input::-moz-focus-inner {
   overflow: hidden; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  overflow-x: hidden; }
 
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
   color: #3e4356;
-  background-color: #fff; }
+  background-color: #fff;
+  overflow-x: hidden; }
   @media (max-width: 900px) {
     body {
       font-size: 1.4rem; } }
@@ -243,17 +245,10 @@ a:active {
   -o-transition: all 0.2s;
   transition: all 0.2s;
   letter-spacing: 0.14rem;
-  margin-top: 5rem; }
+  margin-top: 3.5rem; }
   @media (max-width: 900px) {
     .button {
       margin-top: 2.5rem; } }
-  @media (max-width: 600px) {
-    .button {
-      padding: 0.75rem 1.5rem;
-      font-size: 1.2rem; } }
-  @media (max-width: 400px) {
-    .button {
-      padding: 0.5rem 0.75rem; } }
   .button:hover {
     background-color: #717895;
     -webkit-transform: scale(1.1);
@@ -360,10 +355,9 @@ h2 {
   .headerImage {
     min-height: 75vh;
     width: 35%;
-    background-image: url(../assets/brianImage.jpg);
+    background-image: url(../assets/brianImage.png);
     background-size: cover;
-    background-position: center;
-    border-radius: 2rem; }
+    background-position: center; }
     @media (max-width: 900px) {
       .headerImage {
         width: 50%; } }
@@ -425,7 +419,8 @@ h2 {
   .aboutHeading {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    padding-top: 2rem; }
     @media (max-width: 600px) {
       .aboutHeading {
         -webkit-box-orient: vertical;
@@ -466,9 +461,11 @@ h2 {
           width: 90%; } }
       @media (max-width: 600px) {
         .aboutImage img {
-          width: 100%;
-          -o-object-fit: cover;
-          object-fit: cover; } }
+          width: 100%; } }
+      @media (max-width: 400px) {
+        .aboutImage img {
+          -o-object-fit: contain;
+          object-fit: contain; } }
   .aboutText {
     width: 60%;
     min-height: 70vh;
@@ -481,7 +478,8 @@ h2 {
     @media (max-width: 600px) {
       .aboutText {
         width: 90%;
-        margin: 0 auto; } }
+        margin: 0 auto 2rem auto;
+        text-align: center; } }
     .aboutTextContainer {
       padding: 0 5rem; }
       @media (max-width: 1300px) {
@@ -636,7 +634,7 @@ h2 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
     grid-row-gap: 5rem;
-    padding-bottom: 4rem; }
+    padding-bottom: 5rem; }
     @media (max-width: 1000px) {
       .portfolioTiles {
         display: -webkit-box;
@@ -660,8 +658,13 @@ h2 {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
+    @media (max-width: 1000px) {
+      .portfolioCardImage {
+        margin-bottom: 1.5rem; } }
     .portfolioCardImage img {
-      display: block; }
+      display: block;
+      -webkit-box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+      box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2); }
     .portfolioCardImage:hover {
       -webkit-filter: opacity(100%);
       filter: opacity(100%); }
@@ -727,15 +730,11 @@ h2 {
         margin-left: 0; }
     .portfolioCardText .button {
       color: #fff;
-      font-size: 1.2rem;
       padding: 0.75rem 1.5rem;
       display: inline-block;
-      margin-top: 1rem;
-      margin-right: 1.5rem;
+      margin-top: 2rem;
+      margin-right: 2rem;
       text-transform: capitalize; }
-      @media (max-width: 400px) {
-        .portfolioCardText .button {
-          padding: 0.5rem 0.75rem; } }
   .portfolioButtons {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -850,6 +849,8 @@ h2 {
           font-size: 1.6rem; } }
     .contactInfo i {
       margin-right: 1.5rem; }
+    .contactInfo button {
+      margin-top: 2.5rem; }
     .contactInfoSocial ul {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -875,8 +876,6 @@ h2 {
           .contactInfoSocial ul li {
             padding-left: 1rem;
             padding-right: 1rem; } }
-  .contactButton {
-    margin-top: 3rem; }
   .contactAlt {
     background-color: #edf1fd; }
 

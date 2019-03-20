@@ -1,6 +1,7 @@
 //BASE FONT AND BODY SETTINGS
 html {
   font-size: 62.5%; //1 rem = 10px
+  overflow-x: hidden;
 }
 
 body {
@@ -8,6 +9,7 @@ body {
   font-size: 1.6rem;
   color: $primaryColor;
   background-color: $backgroundPrimary;
+  overflow-x: hidden;
 
   @include breakpoint-tablet-port {
     font-size: 1.4rem;

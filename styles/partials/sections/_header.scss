@@ -81,10 +81,10 @@
     //     rgba(237, 241, 253, 0.4)
     //   ),
     //   url(../assets/brianImage.jpg);
-    background-image: url(../assets/brianImage.jpg);
+    background-image: url(../assets/brianImage.png);
     background-size: cover;
     background-position: center;
-    border-radius: 2rem;
+    // border-radius: 2rem;
 
     @include breakpoint-tablet-port {
       width: 50%;
